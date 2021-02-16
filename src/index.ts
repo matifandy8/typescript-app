@@ -1,3 +1,4 @@
+
 const bAdd          = document.querySelector('#bAdd') as HTMLButtonElement;
 const inputTitle    = document.querySelector('#title') as HTMLInputElement;
 const inputCost     = <HTMLInputElement>document.querySelector('#cost');

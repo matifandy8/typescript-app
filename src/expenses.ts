@@ -1,4 +1,4 @@
-type Currency = 'UYU' | 'USD';
+type Currency = 'MXN' | 'USD';
 
 interface Price{
     number: number,
@@ -72,7 +72,7 @@ class Expenses implements IExpenses{
         switch(item.cost.currency){
             case 'USD':
                 switch(currency){
-                    case 'UYU':
+                    case 'MXN':
                     return item.cost.number * 22;
                     break;
 
@@ -81,7 +81,7 @@ class Expenses implements IExpenses{
                 }
             break;
 
-            case 'UYU':
+            case 'MXN':
                 switch(currency){
                     case 'USD':
                     return item.cost.number / 22;
