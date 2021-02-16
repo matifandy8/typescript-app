@@ -1,118 +1,110 @@
-:root{
-    --border: solid 1px #ccc;
+:root {
+  --border: solid 1px black;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: rgb(244, 217, 252);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    
-}
-header{
-    background-color: darkslateblue;
-    padding: 10px;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
-    width: 600px;
-    margin: 100px auto;
-
-    
+body {
+  background-color: rgb(244, 217, 100);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+header {
+  background-color: black;
+  padding: 10px;
+  color: white;
 }
 
-button{
-    border-radius: 3px;
-    outline: none;
-    
-    border: none;
-    
+main {
+  width: 600px;
+  margin: 100px auto;
 }
 
-#display{
-    border: var(--border);
-    padding: 40px;
-    text-align: right;
-    font-size: 4em;
-    font-weight: bold;
-    margin-bottom: 10px;
+button {
+  border-radius: 3px;
+  outline: none;
 
-    background-color: rgb(25, 57, 87);
-    color: cyan;
+  border: none;
 }
 
-#editor{
-    border: var(--border);
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 80% 19%;
-    column-gap: 5px;
+#display {
+  border: var(--border);
+  padding: 40px;
+  text-align: right;
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 10px;
 
-    background-color: white;
-    
+  background-color: rgb(244, 217, 100);
+  color: black;
 }
 
-#editor #input-container{
-    display: grid;
-    grid-template-columns: 55% 25% 20%;
-    border: var(--border);
+#editor {
+  border: var(--border);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 80% 19%;
+  column-gap: 5px;
 
-}
-
-
-#editor input, #editor select{
-    padding: 10px;
-    border: none;
-    outline: none;
+  background-color: white;
 }
 
-#editor button{
-    justify-items: right;
-    background-color: tomato;
-    color: white;
+#editor #input-container {
+  display: grid;
+  grid-template-columns: 55% 25% 20%;
+  border: var(--border);
 }
 
-#items{
-    border: var(--border);
-    background-color: white;
+#editor input,
+#editor select {
+  padding: 10px;
+  border: none;
+  outline: none;
 }
 
-#items .item{
-    display: grid;
-    grid-template-columns: 20% 69% 5%;
-    align-items: center;
-    padding: 10px;
+#editor button {
+  justify-items: right;
+  background-color: rgb(244, 217, 100);
+  color: white;
 }
 
-#items .item:hover{
-    background-color: rgb(236, 255, 198);
-}
-#items .item:hover .currency{
-    color: rgb(110, 131, 70);
-}
-#items .item:hover button{
-    opacity: 1;
-}
-#items .item button{
-    opacity: 0;
-    padding: 7px 5px;
-    background-color: transparent;
-    color: #222;
+#items {
+  border: var(--border);
+  background-color: white;
 }
 
-#items .item button:hover{
-    background-color: tomato;
-    color: white;
-    
+#items .item {
+  display: grid;
+  grid-template-columns: 20% 69% 5%;
+  align-items: center;
+  padding: 10px;
 }
 
-#items .item .currency{
-    color: #ccc;
-    font-weight: bolder;
+#items .item:hover {
+  background-color: rgb(236, 255, 198);
+}
+#items .item:hover .currency {
+  color: rgb(110, 131, 70);
+}
+#items .item:hover button {
+  opacity: 1;
+}
+#items .item button {
+  opacity: 0;
+  padding: 7px 5px;
+  background-color: rgb(244, 217, 100);
+  color: #222;
 }
 
+#items .item button:hover {
+  background-color: rgb(244, 217, 100);
+  color: white;
+}
+
+#items .item .currency {
+  color: #ccc;
+  font-weight: bolder;
+}

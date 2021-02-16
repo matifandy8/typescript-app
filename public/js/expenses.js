@@ -42,17 +42,17 @@ var Expenses = /** @class */ (function () {
         switch (item.cost.currency) {
             case 'USD':
                 switch (currency) {
-                    case 'MXN':
-                        return item.cost.number * 22;
+                    case 'UYU':
+                        return item.cost.number * 42;
                         break;
                     default:
                         return item.cost.number;
                 }
                 break;
-            case 'MXN':
+            case 'UYU':
                 switch (currency) {
                     case 'USD':
-                        return item.cost.number / 22;
+                        return item.cost.number / 42;
                         break;
                     default:
                         return item.cost.number;
